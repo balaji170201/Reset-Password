@@ -71,7 +71,7 @@ app.post('/forgot-password',(req,res) => {
           from: 'balajithestar069@gmail.com',
           to: email,
           subject: 'Reset your password',
-          text: `http://localhost:3000/reset-password/${user._id}/${token}`
+          text: `https://reset-password-auth.netlify.app/reset-password/${user._id}/${token}`
         };
 
         transporter.sendMail(mailOptions, function(error, info){
